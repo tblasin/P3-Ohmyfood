@@ -1,0 +1,97 @@
+
+
+.animation-menu1{
+ 
+                animation: animation-menu1 1.2s cubic-bezier(0.25, 0.25, 0.25, 0.25) both;
+    }
+
+
+  @keyframes animation-menu1 {
+    0% {
+     
+        transform: translateY(250px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+     
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+
+.animation-menu2{
+ 
+    animation: animation-menu2 1.2s cubic-bezier(0.25, 0.25, 0.25, 0.25) both;
+}
+
+
+@keyframes animation-menu2 {
+  0% {
+
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  50% {
+      opacity: 50%;
+  }
+
+  100% {
+
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation-menu3{
+ 
+    animation: animation-menu3 1.2s cubic-bezier(0.25, 0.25, 0.25, 0.25) both;
+}
+
+
+@keyframes animation-menu3 {
+  0% {
+
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  50% {
+      opacity: 50%;
+  }
+  100% {
+
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation-menu4{
+ 
+  animation: animation-menu4 1.2s cubic-bezier(0.25, 0.25, 0.25, 0.25) both;
+}
+
+@keyframes animation-menu4 {
+  0% {
+
+  transform: translateY(25px);
+  opacity: 0;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+  100% {
+
+  transform: translateY(0);
+  opacity: 1;
+  }
+
+}
+  

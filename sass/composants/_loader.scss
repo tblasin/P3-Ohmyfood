@@ -1,0 +1,101 @@
+
+
+.container-loader{
+    @include flexCenter;
+    font-family: "Shrikhand";
+    border-radius: 2px;
+    background: $cleargrey; 
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    min-height: 260vh;
+    top: -80%;
+    
+}
+
+.container-hidden{
+    animation: fade-out 4s; 
+    animation-fill-mode: forwards;
+}
+
+    @keyframes fade-out{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+            opacity: 0;
+            visibility: hidden;
+            }
+        }
+
+            
+
+
+.loadtxt{
+    font-size: 12px;
+    animation: text 3s ease-in-out infinite;
+    position: absolute;
+}
+
+@keyframes text {
+    50%{
+        color: $white;
+    }
+}
+
+.loader{
+    @include flexCenter;
+    text-align: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: $Primary;
+    animation: spin 2s linear infinite;
+    /* background: $Secondary; */
+}
+
+.loader::before, .loader::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+
+.loader::before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: $Tertiary;
+    animation: spin 4s linear infinite;
+    /* background: $Tertiary; */
+
+}
+
+.loader::after {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-top-color: $Secondary;
+    animation: spin 6s linear infinite;
+    /* background: $white; */
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

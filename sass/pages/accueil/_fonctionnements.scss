@@ -1,0 +1,56 @@
+
+
+/* Section1 Fonctionnement/Filtres */
+
+ .titre2{
+    font-family: "Roboto";
+    @include flexstart;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 30px;
+    padding-top: 50px;
+    width: 90%;
+    
+}
+ .options{
+    font-family: "Roboto";
+    @include flexCenter;
+    flex-direction: column;
+    width: 100%;
+    height: 25rem;
+    gap: 20px;
+
+        &__card1{
+            @include flexCenter;
+            justify-content: space-between;
+            width: 80%;
+            height: 55px;
+            padding:10px;
+            background-color: $cleargrey;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px $shadow;
+            gap: 30px;
+        }
+
+            &__number{
+                @include flexCenter;
+                background-color: $Primary;
+                border-radius: 20px 20px;
+                margin-left: -25px;
+                color: $white;
+                width: 30px;
+                height: 30px;  
+            }
+            
+                .bolder{
+                    @include flexRow;
+                    gap: 25px;
+                    flex:1;
+                }
+
+           
+            
+    }
+
+
+

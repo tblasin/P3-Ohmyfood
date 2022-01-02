@@ -1,0 +1,96 @@
+
+
+body{
+
+    width: 100%;
+    margin:0px;
+
+  .blocpage{
+        
+    @include flexcolumn;
+    
+        /* Section2 Restaurants */
+
+        .blocrestaurants{
+            font-family: "Roboto";
+            width: 100%;
+            height: 80rem;
+            background-color: $cleargrey;
+            @include flexcolumn;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        
+            
+                &__titre2{
+                    font-size: 25px;
+                    font-weight: bolder;
+                    height: 30px;
+                    width: 90%;
+                }
+    
+                &__card2{
+                @include flexcolumn;
+                border-radius: 15px;
+                background-color: $white;
+                width: 90%;
+                align-items: center;
+                box-shadow: $grey;
+                height: 255px;
+                position: relative;
+                box-shadow: 0px 5px 15px $shadow;
+                }
+    
+                .imgplats{
+                display: flex;
+                width: 100%;
+                height: 70%;
+                }
+
+                .imgplats > img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px 15px 0px 0px;
+
+                }
+
+                &__toprighttext{
+                    position: absolute;
+                    top: 5%;
+                    right: 4%;
+                    font-size: 15px;
+                    color: $green;
+                    background-color: $cleargreen;
+                    height: 5px;
+                    padding: 15px;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center; 
+
+                }
+
+                &__details{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: initial;
+                    width: 95%;
+                    font-size: 13px;
+                    padding-top: 7px;
+                }
+
+                .sous_titres{
+                    @include flexcolumn;
+                    line-height: 0px;
+                }
+
+                .legende{
+                    font-size: 17px;
+                }
+
+
+        }
+  }
+}
+
