@@ -1,0 +1,120 @@
+
+
+body{
+    width: 100%;
+    margin:0px;
+    @include flexcolumn;
+    font-family: 'Roboto';
+
+
+        .img_salade{
+            width: 100%;
+            height: 250px;
+        }
+
+        .img_salade > img{
+            width: 100%;
+            height: 55%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .blocmain{
+            @include flexcolumn;
+            border-radius: 30px 30px 0px 0px;
+            background-color: $cleargrey;
+            
+            margin-top: -50px;
+            padding: 20px;
+        }
+
+        .titre1{
+            @include flexRow;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        h1{
+            font-family: "Shrikhand";
+            font-size: 28px;
+        
+        }
+
+        .menus{
+            display: flex;
+            flex-direction: column;
+            height: 55px;
+
+        }
+
+        h2{
+            font-size: 17px;
+            font-weight: lighter;
+            padding-bottom: 5px;
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        .bloc2{
+            
+            @include flexcolumncenter;
+            justify-content: space-between;
+            cursor: pointer;
+            gap: 15px;
+            margin-bottom: 30px;
+
+                &__card1{
+                    @include flexRow;
+                    justify-content: space-between;
+                    background-color: $white;
+                    border-radius: 20px 20px 20px 20px;
+                    font-size: 13px;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px 5px 15px $shadow;
+                    overflow: hidden;
+
+                    &__details{
+                        @include flexcolumn;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        flex: 1;
+                        font-size: 13px;
+                        padding: 15px;
+                        height: 100%;
+                        h3, p{ 
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            margin-block: 0px;
+                            line-height: 20px;
+                    }
+                    }  
+    
+                    &__prix{
+                        padding-right: 15px;
+                        height: 100%;
+                    }
+                    &__checker{
+                        @include flexcolumncenter;
+                        background-color: $Tertiary;
+                        color: $white;
+                        width: 75px;
+                        margin-right: -75px;
+                        height: 75px;
+                    }
+
+                }
+
+               
+        }
+
+       
+
+        
+
+
+
+    }

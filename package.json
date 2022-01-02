@@ -1,0 +1,17 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/restaurant.scss:./css/restaurant.css"
+  },
+  "keywords": [
+    "ISC"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.2"
+  }
+}

@@ -1,0 +1,84 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;  
+}
+
+@mixin flexcolumncenter {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin flexstart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+@mixin heart{
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    right: 30px;
+    .far{
+        position: absolute;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        &:hover{
+            opacity: 0;
+            z-index: 2;
+            + .fas{
+                opacity: 1;
+                z-index: 1;
+                animation: anim 0.5s linear both;
+
+            }
+        }
+    }
+    .fas{
+        background: linear-gradient(63deg, $Secondary 0%, $Primary 100%);
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transform-origin:  50% bottom;
+        transform: scale(1);
+        animation:  transform 0.5s cubic-bezier(0.5 , 0.2, 1, 0.5);
+        transform: translateX(-50%);
+       
+
+    }
+
+}
+
+@keyframes anim {
+
+    0%{
+        transform: scale(0);
+    }
+    
+    100%{
+        transform: scale(1);
+    }
+}

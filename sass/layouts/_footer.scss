@@ -1,0 +1,48 @@
+
+
+footer{
+    font-family: 'Roboto';
+    background-color: $footerbkg;
+    height: 250px;
+    width: 100%;
+
+
+    .logo{
+
+        .footer_logo{
+            @include flexstart;
+            padding-top: 7px;
+            font-size: 20px;
+            color: $white;
+            font-family: 'shrikhand';
+            padding: 35px;
+            margin: 0;
+        }
+
+    }
+
+    .footer_item{
+        color: $white;
+        font-size: 17px;
+
+        ul{
+            margin: 0;
+           
+            li{
+                @include flexstart;
+                list-style: none;
+                text-decoration: none;
+                gap: 15px;
+                line-height: 30px;               
+
+                .fas fa-ustensils{
+                    font-size: 20px;
+
+                }
+            }
+        }
+
+    }
+
+
+}
